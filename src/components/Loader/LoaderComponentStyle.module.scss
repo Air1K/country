@@ -1,0 +1,22 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .loader{
+    width: 48px;
+    height: 48px;
+    animation: animeLoad 1.5s cubic-bezier(.3,.5,.52,.75) infinite;
+  }
+}
+
+@keyframes animeLoad {
+  0%{
+    transform: rotate(0deg);
+  }
+  85%{
+    transform: rotate(720deg);
+  }
+  100%{
+    transform: rotate(720deg);
+  }
+}
